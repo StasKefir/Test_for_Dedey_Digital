@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:600i&display=swap');
+
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url('../fonts/MyriadPro-Regular.eot');
+    src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MyriadPro-Regular.woff') format('woff'),
+        url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next Cyr Medium';
+    src: url('../fonts/fonts/AvenirNextCyr-Medium.eot');
+    src: url('../fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AvenirNextCyr-Medium.woff') format('woff'),
+        url('../fonts/AvenirNextCyr-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gold {
+    color: #ff9a00 !important;
+    font-size: 18px;
+}
+
+.description {
+    font-family: 'Myriad Pro Regular';
+    font-size: 12px;
+}
+
+.description-hotel {
+    font-family: 'Proxima Nova Regular';
+    font-size: 12px;
+}
+
+.place {
+    width: 40%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.place input {
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #6b6b6b;
+}
+
+.check-in {
+    padding-top: 20px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1e1e1e;
+}
+
+.check-in-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar-wrap {
+    height: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.check-in-content input {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+}
+
+.date {
+    width: 75px
+}
+
+.hotel-rooms {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    padding-top: 20px;
+}
+
+.hotel-rooms-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-and-arrows {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr-content-wrap {
+    padding: 0 10px 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hotel-rooms input {
+    border: 1px solid #8a929a;
+    font-family: 'Avenir Next Cyr Medium';
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+.hotel-rooms-content i {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.arrows {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 45px;
+}
+
+.arr-up {
+    position: absolute;
+    left: 8px;
+    top: -12px;
+    cursor: pointer;
+}
+
+.arr-down {
+    font-size: 18px;
+    position: absolute;
+    color: #8a929a;
+    left: 8px;
+    top: -2px;
+    cursor: pointer;
+}
+
+.btn-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-submit {
+    padding-top: 20px;
+    width: 40%;
+}
+
+.btn-submit button {
+    height: 60px;
+    width: 175px;
+    padding: 10px 6px 10px 6px;
+    background-color: #ff9a00;
+    color: #ffffff;
+    font-family: 'Proxima Nova Regular';
+    font-size: 16px;
+    border: none;
+    border-radius: 4%;
+    margin-left: 25px;
+}
+
+.fa-plus-circle {
+    color: #ffd280;
+    font-size: 35px;
+}
+
+.fa-chevron-down {
+    padding-top: 18px;
+    color: #8a929a;
+}
+
+.fa-calendar-alt {
+    padding-right: 10px;
+}
+
+.point {
+    background-color: #8a929a;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.partition {
+    width: 2px;
+    height: 30px;
+    margin-top: 20px;
+    background-color: #e2e0e0;
+}
+
+.second-span {
+    display: none;
+}
+
+@media screen and (min-width: 990px) {
+    .check-in {
+        width: 240px;
+    }
+
+    .place,
+    .hotel-rooms,
+    .btn-submit {
+        width: auto;
+    }
+
+    .hotel-rooms {
+        align-items: center;
+    }
+}
