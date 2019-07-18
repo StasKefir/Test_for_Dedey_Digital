@@ -85,6 +85,7 @@ input {
 
 .check-in {
     padding-top: 20px;
+    padding-right: 50px;
     width: 40%;
     display: flex;
     justify-content: space-between;
@@ -186,6 +187,7 @@ input {
 
 .btn-submit {
     padding-top: 20px;
+    padding-right: 50px;
     width: 40%;
 }
 
@@ -235,7 +237,7 @@ input {
     display: none;
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 1080px) {
     .check-in {
         width: 240px;
     }
