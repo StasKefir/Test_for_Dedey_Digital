@@ -22,7 +22,7 @@ $(document).ready(function () {
     };
 
 
-    let resultArray;
+    let result;
     function handleDrop(e) {
         e.stopPropagation();
         e.preventDefault();
@@ -52,7 +52,7 @@ $(document).ready(function () {
             });
             let keys = Object.keys(workbook.Sheets);
             let jsonObj = XLSX.utils.sheet_to_json(workbook.Sheets[keys[0]]);
-            resultArray= jsonObj;
+            result={resultArray: jsonObj};
             console.log(jsonObj);
         };
         reader.readAsArrayBuffer(f);
@@ -66,7 +66,9 @@ $(document).ready(function () {
             },
             method: "POST",
             dataType: "json",
-            data: resultArray,
+            data: {
+                "resultArray":result
+            },
             success: function(data){
               console.log("succes: "+data);
             }
